@@ -1,0 +1,1 @@
+streamlit>=1.35,<2.0\npandas>=2.0,<3.0\ngoogle-cloud-bigquery>=3.20,<4.0\ngoogle-auth>=2.29,<3.0\ndb-dtypes>=1.2,<2.0\n

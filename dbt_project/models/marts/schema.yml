@@ -1,0 +1,12 @@
+version: 2
+models:
+  - name: fact_enrollment
+    columns:
+      - name: enrollment_id
+        tests: [not_null, unique]
+      - name: recognized_revenue_vnd
+        tests: [not_null]
+  - name: mart_marketing
+    columns:
+      - name: campaign_id
+        tests: [not_null]

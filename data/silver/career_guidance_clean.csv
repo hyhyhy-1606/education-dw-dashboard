@@ -1,0 +1,260 @@
+guidance_id,student_id,guidance_date,guidance_type,advisor_id,outcome,satisfaction_score
+GUI00021,STU00311,2025-01-07,Chọn ngành,ADV001,Cần tư vấn thêm,3.0
+GUI00050,STU00351,2025-03-27,Chọn ngành,ADV001,Cần tư vấn thêm,5.0
+GUI00060,STU00213,2025-05-28,Chọn ngành,ADV001,Đã có định hướng,3.0
+GUI00087,STU00066,2025-02-04,Chọn ngành,ADV001,Đã có định hướng,4.0
+GUI00125,STU00208,2025-11-09,Chọn ngành,ADV001,Đã có định hướng,3.0
+GUI00129,STU00458,2026-05-25,Chọn ngành,ADV001,Đã có định hướng,3.0
+GUI00144,STU00312,2025-12-22,Chọn ngành,ADV001,Đã có định hướng,3.0
+GUI00191,STU00327,2026-05-09,Chọn ngành,ADV001,Cần tư vấn thêm,5.0
+GUI00245,STU00315,2026-04-02,Chọn ngành,ADV001,Cần tư vấn thêm,3.0
+GUI00025,STU00392,2025-01-29,Chọn ngành,ADV002,Đã lập kế hoạch,3.0
+GUI00029,STU00210,2025-06-04,Chọn ngành,ADV002,Đã có định hướng,5.0
+GUI00045,STU00262,2026-03-06,Chọn ngành,ADV002,Cần tư vấn thêm,4.0
+GUI00074,STU00423,2025-06-20,Chọn ngành,ADV002,Đã có định hướng,5.0
+GUI00076,STU00249,2026-04-05,Chọn ngành,ADV002,Đã lập kế hoạch,5.0
+GUI00103,STU00364,2025-07-27,Chọn ngành,ADV002,Cần tư vấn thêm,4.0
+GUI00145,STU00150,2025-05-28,Chọn ngành,ADV002,Đã có định hướng,5.0
+GUI00147,STU00221,2025-01-20,Chọn ngành,ADV002,Đã lập kế hoạch,3.0
+GUI00171,STU00136,2026-03-24,Chọn ngành,ADV002,Cần tư vấn thêm,5.0
+GUI00188,STU00363,2025-02-01,Chọn ngành,ADV002,Đã lập kế hoạch,3.0
+GUI00195,STU00398,2025-05-26,Chọn ngành,ADV002,Cần tư vấn thêm,3.0
+GUI00247,STU00050,2025-06-27,Chọn ngành,ADV002,Đã có định hướng,3.0
+GUI00256,STU00126,2025-08-13,Chọn ngành,ADV002,Đã lập kế hoạch,4.0
+GUI00018,STU00136,2025-05-19,Chọn ngành,ADV003,Đã lập kế hoạch,3.0
+GUI00035,STU00069,2026-01-27,Chọn ngành,ADV003,Cần tư vấn thêm,3.0
+GUI00070,STU00121,2025-02-24,Chọn ngành,ADV003,Đã lập kế hoạch,5.0
+GUI00110,STU00471,2025-05-13,Chọn ngành,ADV003,Cần tư vấn thêm,4.0
+GUI00140,STU00065,2026-05-25,Chọn ngành,ADV003,Cần tư vấn thêm,3.0
+GUI00192,STU00250,2025-04-02,Chọn ngành,ADV003,Cần tư vấn thêm,3.0
+GUI00005,STU00481,2026-07-09,Chọn ngành,ADV004,Đã lập kế hoạch,4.0
+GUI00088,STU00340,2026-02-09,Chọn ngành,ADV004,Cần tư vấn thêm,3.0
+GUI00108,STU00144,2026-02-09,Chọn ngành,ADV004,Đã có định hướng,5.0
+GUI00183,STU00149,2026-06-17,Chọn ngành,ADV004,Cần tư vấn thêm,5.0
+GUI00216,STU00236,2025-03-01,Chọn ngành,ADV004,Cần tư vấn thêm,5.0
+GUI00229,STU00496,2025-01-09,Chọn ngành,ADV004,Đã có định hướng,3.0
+GUI00257,STU00315,2025-01-20,Chọn ngành,ADV004,Cần tư vấn thêm,3.0
+GUI00013,STU00031,2026-04-11,Chọn ngành,ADV005,Đã lập kế hoạch,5.0
+GUI00022,STU00173,2026-06-21,Chọn ngành,ADV005,Đã lập kế hoạch,3.0
+GUI00024,STU00170,2026-04-10,Chọn ngành,ADV005,Đã có định hướng,4.0
+GUI00114,STU00156,2025-12-28,Chọn ngành,ADV005,Đã có định hướng,5.0
+GUI00124,STU00074,2026-05-16,Chọn ngành,ADV005,Đã lập kế hoạch,3.0
+GUI00180,STU00463,2025-07-04,Chọn ngành,ADV005,Đã có định hướng,5.0
+GUI00185,STU00172,2025-11-10,Chọn ngành,ADV005,Đã lập kế hoạch,3.0
+GUI00194,STU00445,2026-05-11,Chọn ngành,ADV005,Đã có định hướng,5.0
+GUI00226,STU00097,2025-09-23,Chọn ngành,ADV005,Đã có định hướng,4.0
+GUI00238,STU00082,2026-04-18,Chọn ngành,ADV005,Đã có định hướng,5.0
+GUI00020,STU00278,2026-06-25,Chọn ngành,ADV006,Đã có định hướng,5.0
+GUI00026,STU00488,2025-05-12,Chọn ngành,ADV006,Cần tư vấn thêm,5.0
+GUI00063,STU00276,2026-04-24,Chọn ngành,ADV006,Đã lập kế hoạch,3.0
+GUI00097,STU00120,2025-07-06,Chọn ngành,ADV006,Cần tư vấn thêm,3.0
+GUI00207,STU00498,2026-03-12,Chọn ngành,ADV006,Đã lập kế hoạch,4.0
+GUI00210,STU00253,2025-07-26,Chọn ngành,ADV006,Cần tư vấn thêm,4.0
+GUI00227,STU00212,2025-06-22,Chọn ngành,ADV006,Đã lập kế hoạch,4.0
+GUI00232,STU00313,2025-08-02,Chọn ngành,ADV006,Cần tư vấn thêm,4.0
+GUI00239,STU00165,2026-04-04,Chọn ngành,ADV006,Đã có định hướng,4.0
+GUI00039,STU00319,2026-07-08,Chọn ngành,ADV007,Đã lập kế hoạch,4.0
+GUI00073,STU00467,2025-03-01,Chọn ngành,ADV007,Đã có định hướng,4.0
+GUI00083,STU00065,2026-05-07,Chọn ngành,ADV007,Cần tư vấn thêm,3.0
+GUI00127,STU00262,2026-05-24,Chọn ngành,ADV007,Cần tư vấn thêm,5.0
+GUI00168,STU00002,2026-04-20,Chọn ngành,ADV007,Cần tư vấn thêm,5.0
+GUI00199,STU00404,2026-08-16,Chọn ngành,ADV007,Cần tư vấn thêm,3.0
+GUI00225,STU00183,2025-04-22,Chọn ngành,ADV007,Đã lập kế hoạch,3.0
+GUI00259,STU00137,2025-11-11,Chọn ngành,ADV007,Đã có định hướng,3.0
+GUI00006,STU00107,2026-08-12,Chọn ngành,ADV008,Đã lập kế hoạch,5.0
+GUI00030,STU00111,2025-08-23,Chọn ngành,ADV008,Đã lập kế hoạch,5.0
+GUI00082,STU00092,2026-05-17,Chọn ngành,ADV008,Cần tư vấn thêm,3.0
+GUI00089,STU00088,2026-05-03,Chọn ngành,ADV008,Đã lập kế hoạch,3.0
+GUI00120,STU00019,2026-08-23,Chọn ngành,ADV008,Đã có định hướng,5.0
+GUI00126,STU00055,2025-08-10,Chọn ngành,ADV008,Đã lập kế hoạch,5.0
+GUI00135,STU00331,2026-02-18,Chọn ngành,ADV008,Đã có định hướng,4.0
+GUI00163,STU00336,2025-07-05,Chọn ngành,ADV008,Cần tư vấn thêm,3.0
+GUI00164,STU00206,2025-03-21,Chọn ngành,ADV008,Đã lập kế hoạch,3.0
+GUI00184,STU00418,2026-04-10,Chọn ngành,ADV008,Cần tư vấn thêm,4.0
+GUI00187,STU00397,2026-02-05,Chọn ngành,ADV008,Đã lập kế hoạch,4.0
+GUI00201,STU00192,2025-08-27,Chọn ngành,ADV008,Cần tư vấn thêm,5.0
+GUI00209,STU00325,2025-04-22,Chọn ngành,ADV008,Cần tư vấn thêm,5.0
+GUI00241,STU00423,2026-04-01,Chọn ngành,ADV008,Đã lập kế hoạch,3.0
+GUI00016,STU00144,2026-07-20,Chọn trường,ADV001,Cần tư vấn thêm,4.0
+GUI00155,STU00246,2026-03-01,Chọn trường,ADV001,Đã có định hướng,5.0
+GUI00162,STU00141,2026-04-08,Chọn trường,ADV001,Cần tư vấn thêm,3.0
+GUI00186,STU00066,2025-10-24,Chọn trường,ADV001,Đã lập kế hoạch,3.0
+GUI00197,STU00296,2025-03-25,Chọn trường,ADV001,Đã lập kế hoạch,5.0
+GUI00221,STU00013,2026-07-08,Chọn trường,ADV001,Đã lập kế hoạch,5.0
+GUI00011,STU00466,2025-09-04,Chọn trường,ADV002,Đã có định hướng,3.0
+GUI00012,STU00480,2025-04-25,Chọn trường,ADV002,Cần tư vấn thêm,3.0
+GUI00072,STU00023,2026-01-17,Chọn trường,ADV002,Cần tư vấn thêm,5.0
+GUI00101,STU00363,2025-02-05,Chọn trường,ADV002,Đã có định hướng,5.0
+GUI00193,STU00458,2026-02-05,Chọn trường,ADV002,Đã lập kế hoạch,4.0
+GUI00200,STU00414,2026-04-14,Chọn trường,ADV002,Đã có định hướng,3.0
+GUI00219,STU00400,2025-09-22,Chọn trường,ADV002,Đã lập kế hoạch,4.0
+GUI00220,STU00097,2025-02-05,Chọn trường,ADV002,Cần tư vấn thêm,5.0
+GUI00231,STU00242,2025-12-21,Chọn trường,ADV002,Đã lập kế hoạch,3.0
+GUI00237,STU00007,2026-06-14,Chọn trường,ADV002,Đã lập kế hoạch,4.0
+GUI00009,STU00451,2025-11-18,Chọn trường,ADV003,Cần tư vấn thêm,3.0
+GUI00019,STU00050,2025-11-29,Chọn trường,ADV003,Đã lập kế hoạch,5.0
+GUI00141,STU00349,2025-02-19,Chọn trường,ADV003,Cần tư vấn thêm,3.0
+GUI00142,STU00241,2025-02-25,Chọn trường,ADV003,Đã lập kế hoạch,3.0
+GUI00152,STU00181,2025-12-12,Chọn trường,ADV003,Đã lập kế hoạch,5.0
+GUI00157,STU00285,2025-12-21,Chọn trường,ADV003,Đã có định hướng,4.0
+GUI00158,STU00172,2025-04-23,Chọn trường,ADV003,Đã lập kế hoạch,5.0
+GUI00165,STU00112,2026-07-22,Chọn trường,ADV003,Đã lập kế hoạch,3.0
+GUI00174,STU00257,2025-08-31,Chọn trường,ADV003,Đã có định hướng,3.0
+GUI00213,STU00291,2025-04-11,Chọn trường,ADV003,Đã có định hướng,4.0
+GUI00093,STU00441,2026-04-01,Chọn trường,ADV004,Cần tư vấn thêm,5.0
+GUI00198,STU00372,2025-10-16,Chọn trường,ADV004,Đã có định hướng,5.0
+GUI00212,STU00464,2026-06-06,Chọn trường,ADV004,Cần tư vấn thêm,4.0
+GUI00215,STU00497,2026-01-18,Chọn trường,ADV004,Cần tư vấn thêm,3.0
+GUI00218,STU00292,2025-03-31,Chọn trường,ADV004,Đã lập kế hoạch,3.0
+GUI00251,STU00354,2025-12-19,Chọn trường,ADV004,Đã lập kế hoạch,5.0
+GUI00253,STU00122,2025-07-29,Chọn trường,ADV004,Cần tư vấn thêm,4.0
+GUI00051,STU00326,2025-12-27,Chọn trường,ADV005,Đã có định hướng,4.0
+GUI00056,STU00192,2026-04-15,Chọn trường,ADV005,Đã lập kế hoạch,5.0
+GUI00090,STU00340,2025-04-04,Chọn trường,ADV005,Đã có định hướng,4.0
+GUI00107,STU00016,2026-05-19,Chọn trường,ADV005,Cần tư vấn thêm,4.0
+GUI00113,STU00353,2026-01-20,Chọn trường,ADV005,Đã có định hướng,4.0
+GUI00137,STU00021,2025-07-27,Chọn trường,ADV005,Đã có định hướng,4.0
+GUI00153,STU00487,2026-01-09,Chọn trường,ADV005,Đã có định hướng,4.0
+GUI00179,STU00468,2026-03-30,Chọn trường,ADV005,Đã lập kế hoạch,3.0
+GUI00002,STU00283,2025-09-20,Chọn trường,ADV006,Đã có định hướng,4.0
+GUI00003,STU00452,2025-08-04,Chọn trường,ADV006,Cần tư vấn thêm,
+GUI00078,STU00430,2026-07-22,Chọn trường,ADV006,Đã có định hướng,5.0
+GUI00092,STU00341,2025-10-24,Chọn trường,ADV006,Đã lập kế hoạch,4.0
+GUI00106,STU00195,2026-02-09,Chọn trường,ADV006,Đã lập kế hoạch,4.0
+GUI00112,STU00181,2025-06-22,Chọn trường,ADV006,Đã lập kế hoạch,5.0
+GUI00146,STU00262,2025-07-24,Chọn trường,ADV006,Đã có định hướng,5.0
+GUI00150,STU00217,2025-11-05,Chọn trường,ADV006,Cần tư vấn thêm,4.0
+GUI00156,STU00441,2025-02-15,Chọn trường,ADV006,Đã lập kế hoạch,3.0
+GUI00196,STU00227,2025-12-13,Chọn trường,ADV006,Đã có định hướng,5.0
+GUI00015,STU00049,2025-06-05,Chọn trường,ADV007,Đã có định hướng,3.0
+GUI00038,STU00024,2025-11-18,Chọn trường,ADV007,Đã có định hướng,4.0
+GUI00061,STU00468,2025-07-02,Chọn trường,ADV007,Đã lập kế hoạch,5.0
+GUI00080,STU00177,2025-09-06,Chọn trường,ADV007,Đã lập kế hoạch,5.0
+GUI00086,STU00379,2026-03-28,Chọn trường,ADV007,Đã có định hướng,5.0
+GUI00132,STU00106,2026-03-16,Chọn trường,ADV007,Đã có định hướng,5.0
+GUI00136,STU00325,2025-06-08,Chọn trường,ADV007,Đã lập kế hoạch,3.0
+GUI00224,STU00447,2025-06-02,Chọn trường,ADV007,Đã có định hướng,5.0
+GUI00042,STU00048,2025-09-06,Chọn trường,ADV008,Cần tư vấn thêm,5.0
+GUI00043,STU00051,2025-12-05,Chọn trường,ADV008,Đã có định hướng,5.0
+GUI00067,STU00349,2025-09-04,Chọn trường,ADV008,Đã có định hướng,3.0
+GUI00243,STU00321,2026-08-20,Chọn trường,ADV008,Đã có định hướng,3.0
+GUI00134,STU00025,2025-12-11,Lộ trình học tập,ADV001,Đã có định hướng,5.0
+GUI00208,STU00266,2026-01-08,Lộ trình học tập,ADV001,Đã có định hướng,5.0
+GUI00248,STU00161,2026-04-08,Lộ trình học tập,ADV001,Đã có định hướng,3.0
+GUI00004,STU00365,2025-07-02,Lộ trình học tập,ADV002,Cần tư vấn thêm,3.0
+GUI00085,STU00405,2026-04-22,Lộ trình học tập,ADV002,Đã có định hướng,4.0
+GUI00109,STU00231,2025-12-05,Lộ trình học tập,ADV002,Cần tư vấn thêm,5.0
+GUI00130,STU00005,2025-05-29,Lộ trình học tập,ADV002,Đã lập kế hoạch,5.0
+GUI00143,STU00446,2025-04-17,Lộ trình học tập,ADV002,Đã lập kế hoạch,3.0
+GUI00169,STU00289,2025-03-01,Lộ trình học tập,ADV002,Cần tư vấn thêm,4.0
+GUI00205,STU00104,2025-12-26,Lộ trình học tập,ADV002,Cần tư vấn thêm,4.0
+GUI00233,STU00247,2025-02-02,Lộ trình học tập,ADV002,Đã lập kế hoạch,5.0
+GUI00170,STU00493,2025-04-25,Lộ trình học tập,ADV003,Đã có định hướng,5.0
+GUI00176,STU00435,2026-01-14,Lộ trình học tập,ADV003,Đã có định hướng,4.0
+GUI00178,STU00087,2025-12-17,Lộ trình học tập,ADV003,Cần tư vấn thêm,4.0
+GUI00182,STU00014,2025-10-10,Lộ trình học tập,ADV003,Đã lập kế hoạch,3.0
+GUI00046,STU00174,2025-04-08,Lộ trình học tập,ADV004,Đã có định hướng,4.0
+GUI00095,STU00268,2025-06-11,Lộ trình học tập,ADV004,Đã có định hướng,4.0
+GUI00121,STU00018,2025-03-11,Lộ trình học tập,ADV004,Đã có định hướng,4.0
+GUI00131,STU00266,2026-01-09,Lộ trình học tập,ADV004,Đã lập kế hoạch,4.0
+GUI00175,STU00348,2025-01-25,Lộ trình học tập,ADV004,Đã có định hướng,5.0
+GUI00177,STU00491,2026-04-02,Lộ trình học tập,ADV004,Đã có định hướng,5.0
+GUI00203,STU00448,2025-02-21,Lộ trình học tập,ADV004,Đã có định hướng,4.0
+GUI00240,STU00372,2026-06-15,Lộ trình học tập,ADV004,Cần tư vấn thêm,4.0
+GUI00031,STU00383,2025-12-02,Lộ trình học tập,ADV005,Đã có định hướng,4.0
+GUI00036,STU00256,2026-05-27,Lộ trình học tập,ADV005,Đã có định hướng,5.0
+GUI00049,STU00138,2025-03-31,Lộ trình học tập,ADV005,Đã có định hướng,4.0
+GUI00065,STU00493,2025-02-13,Lộ trình học tập,ADV005,Cần tư vấn thêm,4.0
+GUI00139,STU00427,2025-10-27,Lộ trình học tập,ADV005,Đã lập kế hoạch,4.0
+GUI00151,STU00370,2025-10-21,Lộ trình học tập,ADV005,Đã có định hướng,5.0
+GUI00234,STU00118,2025-06-22,Lộ trình học tập,ADV005,Đã lập kế hoạch,4.0
+GUI00027,STU00479,2026-01-23,Lộ trình học tập,ADV006,Đã lập kế hoạch,5.0
+GUI00037,STU00139,2025-06-04,Lộ trình học tập,ADV006,Đã có định hướng,4.0
+GUI00053,STU00052,2025-02-20,Lộ trình học tập,ADV006,Đã có định hướng,3.0
+GUI00059,STU00480,2025-10-09,Lộ trình học tập,ADV006,Đã có định hướng,5.0
+GUI00099,STU00469,2025-11-10,Lộ trình học tập,ADV006,Đã lập kế hoạch,3.0
+GUI00159,STU00101,2026-06-16,Lộ trình học tập,ADV006,Đã lập kế hoạch,4.0
+GUI00167,STU00341,2026-05-13,Lộ trình học tập,ADV006,Cần tư vấn thêm,4.0
+GUI00173,STU00081,2026-06-30,Lộ trình học tập,ADV006,Cần tư vấn thêm,4.0
+GUI00190,STU00236,2026-08-10,Lộ trình học tập,ADV006,Đã lập kế hoạch,5.0
+GUI00211,STU00388,2026-05-18,Lộ trình học tập,ADV006,Đã lập kế hoạch,3.0
+GUI00228,STU00413,2025-05-29,Lộ trình học tập,ADV006,Đã có định hướng,4.0
+GUI00040,STU00387,2026-04-20,Lộ trình học tập,ADV007,Đã lập kế hoạch,4.0
+GUI00057,STU00191,2026-03-08,Lộ trình học tập,ADV007,Đã có định hướng,5.0
+GUI00075,STU00445,2026-01-21,Lộ trình học tập,ADV007,Cần tư vấn thêm,4.0
+GUI00081,STU00427,2026-06-26,Lộ trình học tập,ADV007,Đã lập kế hoạch,4.0
+GUI00149,STU00438,2026-06-02,Lộ trình học tập,ADV007,Đã có định hướng,5.0
+GUI00161,STU00242,2025-04-25,Lộ trình học tập,ADV007,Đã lập kế hoạch,3.0
+GUI00217,STU00190,2026-08-09,Lộ trình học tập,ADV007,Cần tư vấn thêm,3.0
+GUI00235,STU00167,2026-07-16,Lộ trình học tập,ADV007,Đã lập kế hoạch,3.0
+GUI00242,STU00002,2025-03-02,Lộ trình học tập,ADV007,Cần tư vấn thêm,4.0
+GUI00244,STU00499,2025-08-18,Lộ trình học tập,ADV007,Đã lập kế hoạch,3.0
+GUI00246,STU00371,2026-05-10,Lộ trình học tập,ADV007,Đã có định hướng,5.0
+GUI00249,STU00258,2025-12-12,Lộ trình học tập,ADV007,Cần tư vấn thêm,3.0
+GUI00008,STU00310,2025-09-13,Lộ trình học tập,ADV008,Đã có định hướng,3.0
+GUI00014,STU00188,2026-03-07,Lộ trình học tập,ADV008,Đã có định hướng,4.0
+GUI00017,STU00020,2025-01-16,Lộ trình học tập,ADV008,Đã có định hướng,4.0
+GUI00064,STU00129,2026-08-03,Lộ trình học tập,ADV008,Đã có định hướng,3.0
+GUI00071,STU00165,2025-01-10,Lộ trình học tập,ADV008,Đã lập kế hoạch,3.0
+GUI00111,STU00393,2025-01-05,Lộ trình học tập,ADV008,Đã lập kế hoạch,5.0
+GUI00189,STU00486,2025-11-26,Lộ trình học tập,ADV008,Đã có định hướng,3.0
+GUI00206,STU00131,2025-05-14,Lộ trình học tập,ADV008,Cần tư vấn thêm,3.0
+GUI00010,STU00345,2026-07-06,Tư vấn nghề nghiệp,ADV001,Đã có định hướng,3.0
+GUI00028,STU00469,2025-10-07,Tư vấn nghề nghiệp,ADV001,Cần tư vấn thêm,3.0
+GUI00033,STU00121,2026-01-08,Tư vấn nghề nghiệp,ADV001,Đã lập kế hoạch,5.0
+GUI00055,STU00377,2025-08-11,Tư vấn nghề nghiệp,ADV001,Đã lập kế hoạch,3.0
+GUI00066,STU00498,2026-05-12,Tư vấn nghề nghiệp,ADV001,Đã có định hướng,5.0
+GUI00094,STU00205,2026-07-07,Tư vấn nghề nghiệp,ADV001,Đã có định hướng,5.0
+GUI00117,STU00042,2025-12-11,Tư vấn nghề nghiệp,ADV001,Đã có định hướng,3.0
+GUI00181,STU00408,2025-04-25,Tư vấn nghề nghiệp,ADV001,Đã có định hướng,5.0
+GUI00214,STU00397,2025-01-22,Tư vấn nghề nghiệp,ADV001,Đã có định hướng,4.0
+GUI00222,STU00149,2026-03-30,Tư vấn nghề nghiệp,ADV001,Đã lập kế hoạch,3.0
+GUI00223,STU00390,2025-07-02,Tư vấn nghề nghiệp,ADV001,Cần tư vấn thêm,4.0
+GUI00252,STU00419,2025-07-28,Tư vấn nghề nghiệp,ADV001,Đã lập kế hoạch,4.0
+GUI00041,STU00449,2025-08-17,Tư vấn nghề nghiệp,ADV002,Cần tư vấn thêm,5.0
+GUI00047,STU00219,2025-01-21,Tư vấn nghề nghiệp,ADV002,Đã lập kế hoạch,3.0
+GUI00115,STU00157,2025-06-07,Tư vấn nghề nghiệp,ADV002,Đã có định hướng,5.0
+GUI00123,STU00483,2026-03-13,Tư vấn nghề nghiệp,ADV002,Cần tư vấn thêm,4.0
+GUI00160,STU00459,2025-08-02,Tư vấn nghề nghiệp,ADV002,Đã lập kế hoạch,4.0
+GUI00032,STU00405,2025-11-14,Tư vấn nghề nghiệp,ADV003,Đã có định hướng,5.0
+GUI00079,STU00040,2025-09-12,Tư vấn nghề nghiệp,ADV003,Đã lập kế hoạch,5.0
+GUI00122,STU00439,2026-06-12,Tư vấn nghề nghiệp,ADV003,Đã có định hướng,5.0
+GUI00258,STU00301,2025-08-07,Tư vấn nghề nghiệp,ADV003,Đã có định hướng,3.0
+GUI00069,STU00008,2026-02-05,Tư vấn nghề nghiệp,ADV004,Đã có định hướng,5.0
+GUI00104,STU00336,2026-02-06,Tư vấn nghề nghiệp,ADV004,Đã lập kế hoạch,3.0
+GUI00118,STU00329,2025-04-02,Tư vấn nghề nghiệp,ADV004,Đã có định hướng,5.0
+GUI00128,STU00017,2025-10-17,Tư vấn nghề nghiệp,ADV004,Cần tư vấn thêm,4.0
+GUI00133,STU00345,2026-01-25,Tư vấn nghề nghiệp,ADV004,Cần tư vấn thêm,5.0
+GUI00138,STU00465,2026-06-07,Tư vấn nghề nghiệp,ADV004,Đã có định hướng,4.0
+GUI00034,STU00451,2026-01-26,Tư vấn nghề nghiệp,ADV005,Đã có định hướng,4.0
+GUI00048,STU00125,2025-09-05,Tư vấn nghề nghiệp,ADV005,Đã có định hướng,3.0
+GUI00054,STU00408,2025-11-25,Tư vấn nghề nghiệp,ADV005,Đã lập kế hoạch,3.0
+GUI00062,STU00097,2026-01-03,Tư vấn nghề nghiệp,ADV005,Đã có định hướng,4.0
+GUI00166,STU00471,2025-10-27,Tư vấn nghề nghiệp,ADV005,Cần tư vấn thêm,3.0
+GUI00068,STU00244,2025-11-21,Tư vấn nghề nghiệp,ADV006,Đã có định hướng,5.0
+GUI00096,STU00451,2025-02-04,Tư vấn nghề nghiệp,ADV006,Đã lập kế hoạch,4.0
+GUI00098,STU00324,2025-10-02,Tư vấn nghề nghiệp,ADV006,Cần tư vấn thêm,4.0
+GUI00154,STU00204,2025-03-14,Tư vấn nghề nghiệp,ADV006,Đã có định hướng,4.0
+GUI00202,STU00202,2026-07-22,Tư vấn nghề nghiệp,ADV006,Đã có định hướng,4.0
+GUI00204,STU00011,2025-12-19,Tư vấn nghề nghiệp,ADV006,Cần tư vấn thêm,5.0
+GUI00230,STU00064,2025-03-20,Tư vấn nghề nghiệp,ADV006,Cần tư vấn thêm,3.0
+GUI00255,STU00101,2025-05-26,Tư vấn nghề nghiệp,ADV006,Đã có định hướng,3.0
+GUI00023,STU00037,2026-03-31,Tư vấn nghề nghiệp,ADV007,Cần tư vấn thêm,4.0
+GUI00052,STU00107,2025-03-16,Tư vấn nghề nghiệp,ADV007,Cần tư vấn thêm,5.0
+GUI00102,STU00184,2025-09-10,Tư vấn nghề nghiệp,ADV007,Cần tư vấn thêm,5.0
+GUI00148,STU00076,2025-01-14,Tư vấn nghề nghiệp,ADV007,Đã có định hướng,3.0
+GUI00172,STU00381,2026-02-16,Tư vấn nghề nghiệp,ADV007,Cần tư vấn thêm,5.0
+GUI00236,STU00051,2026-01-09,Tư vấn nghề nghiệp,ADV007,Cần tư vấn thêm,3.0
+GUI00250,STU00290,2025-03-06,Tư vấn nghề nghiệp,ADV007,Cần tư vấn thêm,5.0
+GUI00254,STU00004,2026-04-15,Tư vấn nghề nghiệp,ADV007,Cần tư vấn thêm,3.0
+GUI00001,STU00056,2026-03-12,Tư vấn nghề nghiệp,ADV008,Cần tư vấn thêm,3.0
+GUI00007,STU00023,2025-01-21,Tư vấn nghề nghiệp,ADV008,Đã lập kế hoạch,4.0
+GUI00044,STU00281,2025-02-20,Tư vấn nghề nghiệp,ADV008,Đã có định hướng,5.0
+GUI00058,STU00282,2026-01-19,Tư vấn nghề nghiệp,ADV008,Đã lập kế hoạch,5.0
+GUI00077,STU00437,2026-05-25,Tư vấn nghề nghiệp,ADV008,Cần tư vấn thêm,3.0
+GUI00084,STU00036,2026-04-18,Tư vấn nghề nghiệp,ADV008,Đã có định hướng,4.0
+GUI00091,STU00312,2026-06-06,Tư vấn nghề nghiệp,ADV008,Cần tư vấn thêm,3.0
+GUI00100,STU00177,2025-11-21,Tư vấn nghề nghiệp,ADV008,Cần tư vấn thêm,5.0
+GUI00105,STU00193,2026-05-17,Tư vấn nghề nghiệp,ADV008,Đã có định hướng,3.0
+GUI00116,STU00078,2026-01-13,Tư vấn nghề nghiệp,ADV008,Đã có định hướng,3.0
+GUI00119,STU00467,2025-12-14,Tư vấn nghề nghiệp,ADV008,Cần tư vấn thêm,5.0

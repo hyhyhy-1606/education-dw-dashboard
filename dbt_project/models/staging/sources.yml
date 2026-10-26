@@ -1,0 +1,26 @@
+version: 2
+sources:
+  - name: bronze
+    database: data-warehouse-512306
+    schema: education_dw
+    tables:
+      - name: students
+      - name: campaigns
+      - name: leads
+      - name: enrollments
+      - name: courses
+      - name: learning_records
+      - name: career_guidance
+models:
+  - name: stg_students
+    columns:
+      - name: student_id
+        tests: [not_null, unique]
+  - name: stg_leads
+    columns:
+      - name: lead_id
+        tests: [not_null, unique]
+  - name: stg_enrollments
+    columns:
+      - name: enrollment_id
+        tests: [not_null, unique]

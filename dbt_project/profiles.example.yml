@@ -1,0 +1,13 @@
+# Copy this to ~/.dbt/profiles.yml
+# Prefer Application Default Credentials via `gcloud auth application-default login`.
+education_dw:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: data-warehouse-512306
+      dataset: education_dw_gold
+      threads: 4
+      location: asia-southeast1
+      priority: interactive
