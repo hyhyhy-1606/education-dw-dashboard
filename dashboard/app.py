@@ -46,11 +46,15 @@ def bq_available():
 
 
 def insert_bq_row(table_name: str, row: dict):
-    """Insert one row without replacing or rebuilding the existing Silver table.
+    """Append one row without replacing or rebuilding the existing Silver table.
 
     The row is aligned to the actual BigQuery schema so optional columns such as
     created_at do not cause an insert to fail when they are not present.
     """
+    # Import here because `bigquery` imported inside get_bq_client() is local
+    # to that function and is not visible in this function's scope.
+    from google.cloud import bigquery
+
     client = get_bq_client()
     if client is None:
         raise RuntimeError(
