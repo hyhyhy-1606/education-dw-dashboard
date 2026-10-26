@@ -17,6 +17,7 @@ PROJECT = "data-warehouse-512306"
 DATASET = "education_dw"
 BQ_LOCATION = "asia-southeast1"
 
+
 # ─── BigQuery client ──────────────────────────────────────────────────────────
 # Streamlit Community Cloud:
 # App -> Settings / Manage app -> Secrets
@@ -46,11 +47,9 @@ def bq_available():
 
 
 def insert_bq_row(table_name: str, row: dict):
-    """Insert one row without replacing or rebuilding the existing Silver table.
+    """Append one row with a BigQuery Load Job, never a streaming insert."""
+    from google.cloud import bigquery
 
-    The row is aligned to the actual BigQuery schema so optional columns such as
-    created_at do not cause an insert to fail when they are not present.
-    """
     client = get_bq_client()
     if client is None:
         raise RuntimeError(
@@ -58,14 +57,38 @@ def insert_bq_row(table_name: str, row: dict):
             "và quyền của service account."
         )
 
+    allowed_tables = {
+        "silver_students",
+        "silver_enrollments",
+        "silver_leads",
+    }
+    if table_name not in allowed_tables:
+        raise ValueError(f"Không cho phép ghi vào bảng: {table_name}")
+
     table_id = f"{PROJECT}.{DATASET}.{table_name}"
     table = client.get_table(table_id)
     schema_by_name = {field.name: field for field in table.schema}
 
-    unknown = sorted(set(row) - set(schema_by_name))
-    # Ignore fields not in the table schema; the source form may contain
-    # optional values that the current table does not store.
-    payload = {key: value for key, value in row.items() if key in schema_by_name}
+    # Keep only columns that exist in the actual BigQuery table schema.
+    payload = {
+        key: value
+        for key, value in row.items()
+        if key in schema_by_name
+    }
+
+    # Convert date-like ISO strings to Python date objects for DATE columns.
+    for field in table.schema:
+        if field.name in payload and payload[field.name] is not None:
+            if field.field_type.upper() == "DATE":
+                value = payload[field.name]
+                if isinstance(value, str):
+                    payload[field.name] = datetime.date.fromisoformat(value)
+            elif field.field_type.upper() in {"DATETIME", "TIMESTAMP"}:
+                value = payload[field.name]
+                if isinstance(value, str):
+                    # Keep ISO date strings as supplied; BigQuery JSON load accepts
+                    # standard ISO-8601 date/time values.
+                    payload[field.name] = value
 
     missing_required = []
     for field in table.schema:
@@ -78,15 +101,40 @@ def insert_bq_row(table_name: str, row: dict):
 
     if missing_required:
         raise ValueError(
-            f"Bảng {table_name} yêu cầu thêm trường bắt buộc: "
+            f"Bảng {table_name} yêu cầu trường bắt buộc: "
             + ", ".join(missing_required)
-            + ". Hãy đối chiếu schema BigQuery trước khi ghi dữ liệu."
+            + ". Hãy kiểm tra schema thực tế của BigQuery."
         )
 
-    errors = client.insert_rows_json(table_id, [payload])
-    if errors:
-        raise RuntimeError(f"BigQuery không nhận bản ghi: {errors}")
+    # BigQuery Load Job, not insert_rows_json()/Streaming Insert.
+    # WRITE_APPEND adds records without replacing the existing Silver table.
+    job_config = bigquery.LoadJobConfig(
+        schema=table.schema,
+        write_disposition=bigquery.WriteDisposition.WRITE_APPEND,
+        source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON,
+    )
 
+    # load_table_from_json expects JSON-compatible values. Convert Python date
+    # values back to ISO strings after validating them above.
+    json_payload = []
+    for source_row in [payload]:
+        safe_row = {}
+        for key, value in source_row.items():
+            if isinstance(value, (datetime.date, datetime.datetime)):
+                safe_row[key] = value.isoformat()
+            else:
+                safe_row[key] = value
+        json_payload.append(safe_row)
+
+    load_job = client.load_table_from_json(
+        json_payload,
+        table_id,
+        job_config=job_config,
+        location=BQ_LOCATION,
+    )
+    load_job.result()
+
+    # Refresh table metadata so caller gets an exception if the load failed.
     return table_id
 
 
@@ -114,7 +162,7 @@ else:
 data_source = st.sidebar.radio(
     "Nguồn dữ liệu:",
     ("☁️ Google BigQuery Cloud (Live)", "💾 Local Silver (Offline)"),
-    index=1,  # Keep Local Offline as the default.
+    index=1,
 )
 
 st.sidebar.markdown("---")
@@ -214,6 +262,7 @@ students, leads, enrollments, learning, guidance, campaigns, courses, is_live = 
 if "write_success_message" in st.session_state:
     st.success(st.session_state.pop("write_success_message"))
 
+
 # ─── Main dashboard ───────────────────────────────────────────────────────────
 st.title("EduMarketing 360° — Marketing Performance Dashboard")
 if is_live:
@@ -236,6 +285,7 @@ if data_source == "☁️ Google BigQuery Cloud (Live)" and not is_live:
         "Bạn đã chọn BigQuery Live nhưng chưa đọc được dữ liệu BigQuery. "
         "Biểu mẫu ghi dữ liệu sẽ không hoạt động cho đến khi kết nối được."
     )
+
 
 # ─── KPI ──────────────────────────────────────────────────────────────────────
 lead_total = len(leads)
@@ -269,6 +319,7 @@ st.markdown("---")
 tab_dash, tab_form_student, tab_form_enroll, tab_form_lead = st.tabs(
     ["📊 Dashboard", "➕ Thêm học viên mới", "📝 Đăng ký khóa học", "📣 Thêm Lead mới"]
 )
+
 
 # ─── Tab 1: Dashboard ─────────────────────────────────────────────────────────
 with tab_dash:
