@@ -83,10 +83,42 @@ def insert_bq_row(table_name: str, row: dict):
             + ". Hãy đối chiếu schema BigQuery trước khi ghi dữ liệu."
         )
 
-    errors = client.insert_rows_json(table_id, [payload])
-    if errors:
-        raise RuntimeError(f"BigQuery không nhận bản ghi: {errors}")
+    # Use a BigQuery LOAD job instead of insert_rows_json (Streaming Insert).
+    # LOAD jobs work in BigQuery Sandbox / free tier and append only this row.
+    frame_data = {}
+    for field_name, value in payload.items():
+        field = schema_by_name[field_name]
+        if value is None:
+            frame_data[field_name] = [None]
+        elif field.field_type == "DATE":
+            frame_data[field_name] = [pd.to_datetime(value).date()]
+        elif field.field_type == "TIMESTAMP":
+            frame_data[field_name] = [pd.to_datetime(value, utc=True)]
+        elif field.field_type == "DATETIME":
+            frame_data[field_name] = [pd.to_datetime(value).to_pydatetime()]
+        elif field.field_type in ("INTEGER", "INT64"):
+            frame_data[field_name] = [int(value)]
+        elif field.field_type in ("FLOAT", "FLOAT64", "NUMERIC", "BIGNUMERIC"):
+            frame_data[field_name] = [float(value)]
+        elif field.field_type in ("BOOLEAN", "BOOL"):
+            frame_data[field_name] = [bool(value)]
+        else:
+            frame_data[field_name] = [str(value)]
 
+    frame = pd.DataFrame(frame_data)
+    job_config = bigquery.LoadJobConfig(
+        write_disposition=bigquery.WriteDisposition.WRITE_APPEND,
+        schema=table.schema,
+    )
+    load_job = client.load_table_from_dataframe(
+        frame,
+        table_id,
+        job_config=job_config,
+        location=BQ_LOCATION,
+    )
+    load_job.result()
+
+    client.get_table(table_id)
     return table_id
 
 
