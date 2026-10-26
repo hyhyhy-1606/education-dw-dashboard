@@ -11,6 +11,10 @@ st.set_page_config(
     page_icon="🎓",
 )
 
+# Show the one-time save confirmation before any BigQuery/data loading occurs.
+if "write_success_message" in st.session_state:
+    st.success(st.session_state.pop("write_success_message"))
+
 BASE_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = BASE_DIR / "data" / "silver"
 PROJECT = "data-warehouse-512306"
@@ -259,8 +263,7 @@ students, leads, enrollments, learning, guidance, campaigns, courses, is_live = 
     data_source
 )
 
-if "write_success_message" in st.session_state:
-    st.success(st.session_state.pop("write_success_message"))
+
 
 
 # ─── Main dashboard ───────────────────────────────────────────────────────────
