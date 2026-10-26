@@ -440,7 +440,12 @@ with tab_form_student:
             try:
                 with st.spinner("Đang lưu học viên lên BigQuery..."):
                     insert_bq_row("silver_students", row)
-                refresh_after_write(f"✅ Đã thêm học viên `{new_id}` vào BigQuery.")
+                st.cache_data.clear()
+                success_message = f"✅ Đã thêm học viên `{new_id}` vào BigQuery thành công!"
+                st.success(success_message)
+                st.toast("Lưu học viên thành công!", icon="✅")
+                st.balloons()
+                st.info("Bản ghi đã được lưu. Bấm **🔄 Làm mới dữ liệu** ở thanh bên để cập nhật số liệu trên Dashboard.")
             except Exception as exc:
                 st.error(f"Không thể lưu học viên: {exc}")
 
@@ -515,11 +520,19 @@ with tab_form_enroll:
             try:
                 with st.spinner("Đang lưu đăng ký lên BigQuery..."):
                     insert_bq_row("silver_enrollments", row)
-                refresh_after_write(
-                    f"✅ Đã đăng ký khóa học `{e_course_name}` cho học viên "
-                    f"`{e_student}`. Mã đăng ký: `{new_eid}`. "
-                    f"Doanh thu dự kiến ghi nhận: {amount_paid:,.0f} VND."
+                st.cache_data.clear()
+                success_message = (
+                    f"✅ Đã đăng ký khóa học **{e_course_name}** cho học viên "
+                    f"**{e_student}** thành công!\\n\\n"
+                    f"- Mã đăng ký: `{new_eid}`\\n"
+                    f"- Học phí niêm yết: **{list_price:,.0f} VND**\\n"
+                    f"- Giảm giá: **{discount:,.0f} VND**\\n"
+                    f"- **Doanh thu dự kiến: {amount_paid:,.0f} VND**"
                 )
+                st.success(success_message)
+                st.toast("Đăng ký khóa học thành công!", icon="✅")
+                st.balloons()
+                st.info("Bấm **🔄 Làm mới dữ liệu** ở thanh bên để cập nhật Dashboard.")
             except Exception as exc:
                 st.error(f"Không thể lưu đăng ký: {exc}")
 
@@ -595,9 +608,16 @@ with tab_form_lead:
         try:
             with st.spinner("Đang lưu Lead lên BigQuery..."):
                 insert_bq_row("silver_leads", row)
-            refresh_after_write(
-                f"✅ Đã ghi nhận Lead `{new_lid}`. Nguồn: {l_source}; "
-                f"chiến dịch: {l_campaign}; trạng thái: {l_status}."
+            st.cache_data.clear()
+            success_message = (
+                f"✅ Đã ghi nhận Lead mới **{new_lid}** thành công!\\n\\n"
+                f"- Nguồn: **{l_source}**\\n"
+                f"- Chiến dịch: **{l_campaign}**\\n"
+                f"- Trạng thái: **{l_status}**"
             )
+            st.success(success_message)
+            st.toast("Lưu Lead thành công!", icon="✅")
+            st.balloons()
+            st.info("Bấm **🔄 Làm mới dữ liệu** ở thanh bên để cập nhật tổng Leads và tỷ lệ chuyển đổi.")
         except Exception as exc:
             st.error(f"Không thể lưu Lead: {exc}")
