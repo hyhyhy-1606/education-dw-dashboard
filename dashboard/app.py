@@ -6,7 +6,7 @@ import pandas as pd
 import streamlit as st
 
 st.set_page_config(
-    page_title="Education DW BI — Cloud & Local",
+    page_title="Dashboard quản lý giành cho Team Data",
     layout="wide",
     page_icon="🎓",
 )
